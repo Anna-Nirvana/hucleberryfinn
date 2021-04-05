@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://d3js.org/d3.v6.js"></script>
+  <link rel="stylesheet" type="text/css" href="p-style.css">
+</head>
+
+<body>
+
+<div class = "parallax">
+
+  <div id = "banner" class = "center">
+    <img src = "./img/header.png" alt = "header" width = "100%"> </img>
+  </div>
+
+  <div class = "main-content">
+  <h1> How clean are U.S. rivers, streams, and lakes today? </h1>
+
+  <h2> Watersheds support all life on Earth, and keeping them clean is essential to forging our sustainable future.  </h2> 
+  <p> </p>
+
+  <img src = "./img/branch-red.png" alt = "decorative branch logo" width = "90%" height = "20%" class = "icon"> </img>
+
+  <h3> 1. Who the heck is "Huck"? </h3>
+    <p> The United States Geological Survey (USGS) divides the nation into 21 watershed regions, designated by Hydrologic Unit Codes (HUCs). All the lakes, streams, tributaries and rivers within a HUC region drain to the same place. The Enivronmental Protection Agency (EPA) keeps water quality records using a series of gages at key discharge sites at the bottom of each HUC. The most recent data as well as historical records are publicly available using <a href="https://echo.epa.gov/trends/loading-tool/get-data/watershed-statistics/"> EPA's Enforcement and Compliance History Online (ECHO) tool.</a> </p>
+
+  <p> </p>
+  <p> </p>
+
+  <p> <strong> 2. Explore which HUC you live in on the map below: </strong> </p>
+
+  <img src = "./img/hucs.png" alt = "watershed map" width = 100% height = "100%"> </img>
+
+  <p> The graph below shoes the relative volumes of the <a href="https://www.epa.gov/eg/toxic-and-priority-pollutants-under-clean-water-act"> pollutants the EPA has designated 'priority' under the Clean Water Act</a>, in units that account for their relative toxicity. These units are called <b> Toxic-Weighted Pounds Equivalent (TWPE)</b>; in essence, this is a hypothetical volumetric measurement if all these toxic compounds and chemicals had the <i>same level of toxicity</i>. </p>
+
+  <h3> 3. Understanding (fishy) scales </h3>
+  <p> The graph below is displayed <b> on a logarithmic scale of thousands of TWPE</b>. That means that bars that look "head and shoulders" taller than their neighbors, like California's value in 2016, which is the highest in the dataset, are <i>even higher than they look</i> compared to the rest. California's 2016 value is displayed here as 20.28 on our homemade pollution score scale - the very top - compared to the Great Basin's 18.38 in 2019. In their original units, California's 2016 value was </i>almost 6.5 <b> billion </b> </i> of those toxic-weighted pounds, compared to the Great Basin's 96 <b> million </b> in 2019. </p>
+  
+  <p><b>TL;DR:</b> toward the top of this chart, values can be <i>exponentially</i> different. These units, while a bit strange to get used to, make it easier to see the full range of possible values compared between regions. </p>
+  <p> </p>
+
+  <h3> 4. Turning (water) tables </h3>
+  <p> Once you understand the note on the scale of this graph above, click the buttons below the chart to see how pollution changed in the U.S. water table over the past six years. Keep in mind, 2020 isn't over yet! </p> 
+  <h4 id = "graphtitle"> 2020 </h3>
+
+  <div id = "container" class = "center">
+
+    <div id= "chart1">
+        <script src = "./p-script.js"> </script>
+    </div>
+
+  </div>
+
+    <div id = "buttons" class = "buttons" style = "text-align: center;">
+      <p> </p>
+      <button id="show2015"> 2015 </button>
+      <button id="show2016"> 2016 </button>
+      <button id="show2017"> 2017 </button>
+      <button id="show2018"> 2018 </button>
+      <button id="show2019"> 2019 </button>
+      <button id="show2020"> 2020 </button>
+    </div>
+
+  <p> </p>
+  <p> </p>
+
+  <img src = "./img/branch-red.png" alt = "decorative branch logo" width = "200px"  alt = "branch"  class = "icon"> </img>
+
+  <p> </p>
+
+<h3> 5. Exploring the data and further questions </h3>
+<ul>
+    <li> California experienced a major drought between 2012 and 2016; it's possible that the collective runoff from these four years contributed to that watershed's massive pollution score for that year. The state also has a history of struggling with water quality, including <a href = "http://environmentalintegrity.org/wp-content/uploads/CA-Arsenic-Report.pdf"> drinking water</a>. </li>
+
+    <li> <b> Coastal states and watersheds </b> may have higher pollution scores than inland ones, because eventually, almost all inland bodies of water will drain along the coast.
+
+    <li> Large events like oil spills <i> should </i> greatly affect the pollution factor for a given region in a given year. For instance, in 2016-2017, multiple oil spills occurred in both South and North Dakota, which are primarily located in the Missouri River HUC. But wait! If you click on those years above, you won't see a significant change. That's partly because... </li>
+
+    <li> While other substances are regulated under the Clean Water Act, neither Congress nor the EPA have updated the priority pollutant list since 1977. This means the list is dramatically out of date; it contains outdated pesticides that aren't used anymore, while omitting <a href = "https://www.e-education.psu.edu/fsc432/node/5"> some hydrocarbons that make up crude oil</a>. </li>
+  
+  <h2> To fight for our sustainable future, we must understand and care for the resources that truly connect us. </h2>
+  
+  <h2> That means taking care of our watersheds, tracking pollution levels over time, and holding representatives accountable... not only to fight for environmental change, but also to uphold the progress we've been making for decades. </h2>
+
+  <div id = "cta"> 
+    <button> <a href = "https://www.epa.gov/home/forms/contact-epa"> Contact the EPA </a> <br> <br>  <img src = "./img/branch-yellow.png" class = "icon"> </img> </button>
+    <button> <a href = "https://echo.epa.gov/trends/loading-tool/get-data/watershed-statistics/">  Explore the data </a> <br> <br>  <img src = "./img/branch-yellow.png" class = "icon"> </img> </button>
+  </div>
+
+</div>
+  
+</body>
+</html>
