@@ -1,21 +1,9 @@
 html, body {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  background-image: url("./img/background-12.jpg");
-  padding: 0px;
-  margin: 0px;
+  background-image: url("./img/background.jpg");
+  /* padding: 0px;
+  margin: 0px; */
   }
-
-.button {
-  background: navy;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  }
-
-  .main-content {
-  margin: 2%;
-  padding: 3%;
-  background-color: lightgray;
-  opacity: 80%;
-}
 
 .parallax { 
   background-image: url("./img/background-12.jpg");
@@ -26,38 +14,116 @@ html, body {
   background-size: cover;
 }
 
+#banner {
+margin-bottom: 0px;
+width: 100vw;
+}
+
+.main-content {
+  margin: 2%;
+  margin-top: 0%;
+  padding: 3%;
+  background-color: lightgray;
+  opacity: 95%;
+  display: block;
+}
+
+h1 {
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30pt;
+  color:white;
+  font-weight: lighter;
+  background: rgb(1, 1, 37, 1);
+  padding: 20px;
+  border-radius: 9px;
+}
+
+h2 {
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20pt;
+  color: white;
+  font-weight: lighter;
+  background:#660033;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+p, ul, li {
+  padding:3px;
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(1, 1, 37, 1);
+  font-size: 15pt;
+  line-height: 1.3;
+}
+
+ul {
+  margin-left: 50px;
+}
+
+li {
+  padding-top: 10px;
+}
+
+.center {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 75vh;
+  min-height: 400px;
+}
+
+#container {
+  width: 85%;
+  height: 75%;
+  min-width: 300px;
+  max-width: 90vw;
+  min-height: 600px;
+  max-height: 90vw;
+  display: block;
+  margin: auto;
+  }
+
+#chart1 {
+  width: inherit;
+  max-width: 95vw;
+  height: inherit;
+  position: relative;
+}
+
+.buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: navy;
+  border: none;
+  margin: 2%;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  display: inline-block;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 15px;
+}
+
+.icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 20%;
+}
+
 strong{
   font-family: 'Courier New', Courier, monospace;
   color: navy;
   font-size: 20pt;
-}
-
-#container {
-  width: 100%;
-  height: 70vh;
-
-  display: flex;
-  flex-direction: row;
-}
-
-#chart-1 {
-  height: 100%;
-  position: relative;
-  align-items: center;
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 50pt;
-  color:black;
-}
-
-h2 {
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20pt;
-  color:navy;
 }
 
 h3 {
@@ -67,54 +133,58 @@ h3 {
   color: black;
 }
 
-p {
-  padding:3px;
-  text-align: justify;
-  font-family: 'Courier New', Courier, monospace;
-  color: black;
-  font-size: 15pt;
-}
-
-.center {
+#graphtitle {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.column {
-  float: left;
-  width: 50%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#pollutantList {
+  margin-left: 48%;
+  font-style: bold;
   font-family: 'Courier New', Courier, monospace;
-  padding-left: 20px;
-  color: maroon;
-}
-
-.axisLabel {
-  font-size: 16pt;
-  font-weight: bold;
+  font-size: 20pt;
+  color: navy;
 }
 
 .axis {
-  font-size: 12pt;
+  font-size: small;
+  color: navy;
+}
+
+.axisLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: italic;
+  fill: navy;
+}
+
+h3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: bold;
+  font-size: 20pt;
+  color: navy;
 }
 
 .tooltip {
   position: absolute;
+  text-align: center;
   left: 0px;
   top: 0px;
   visibility: hidden;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14pt;
-  background-color:rgba(255, 238, 126, 0.5);
-  padding: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12pt;
+  background:rgba(255, 180, 19, 0.9);
+  padding: 5px;
   pointer-events: none;
+}
+
+#cta {
+  display: inline-block;
+  padding: 10px;
+}
+
+a {
+color: white;
+background-color: navy;
+padding: 3px;
+border-radius: 7px;
 }
